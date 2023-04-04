@@ -5,6 +5,10 @@
   list-style-type: none;
 }
 
+html {
+  font-size: 16px;
+}
+
 .header {
   background: rgb(234, 254, 236);
   display: flex;
@@ -22,6 +26,24 @@
   gap: 20px;
 }
 
+@media (min-width: 390px) and (max-width: 391px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    gap: 5vw;
+  }
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+  }
+}
 .navigation {
   background: rgb(241, 255, 248);
   display: flex;
@@ -54,6 +76,40 @@
   color: rgb(33, 45, 50);
 }
 
+@media (min-width: 390px) and (max-width: 391px) {
+  .navigation {
+    background: rgb(241, 255, 248);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2%;
+  }
+  .navigation__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    font-family: "Roboto";
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgb(33, 45, 50);
+    padding-top: 4%;
+    padding-bottom: 4%;
+    gap: 5vw;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto";
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgb(33, 45, 50);
+  }
+}
 .banner {
   display: flex;
   flex-direction: row;
@@ -140,6 +196,35 @@
   background: no-repeat;
 }
 
+@media (min-width: 390px) and (max-width: 391px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .info {
+    gap: 5vw;
+  }
+  .info__header {
+    padding: 1%;
+    font-family: "Roboto";
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  .info__header2 {
+    padding: 2%;
+    font-family: "Roboto";
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .info__text {
+    padding: 4%;
+    font-family: "Roboto";
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
 .steps {
   display: flex;
   flex-direction: column;

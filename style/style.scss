@@ -5,6 +5,10 @@
   list-style-type: none;
 }
 
+html {
+  font-size: 16px;
+}
+
 $grey-color: rgba(33, 45, 50, 1);
 $light-grey-color: rgba(241, 243, 242, 1);
 $dark-grey1-color: rgba(50, 80, 91, 1);
@@ -52,6 +56,20 @@ $font-family-Robota: 'Roboto';
   gap: 20px;
 }
 
+@media (min-width: 390px) and (max-width: 391px) {
+  .header {
+    @include flex(flex, row, space-between, stretch);
+    padding-top: 4%;
+    padding-bottom: 4%;
+    gap: 5vw;
+  }
+  .social-media {
+    @include flex(flex, row, space-between, center);
+    gap: 3vw;
+  }
+}
+
+
 .navigation {
   background: $light-green-color;
   @include flex(flex, row, space-between, center);
@@ -71,6 +89,32 @@ $font-family-Robota: 'Roboto';
   @include font_settings($font-family-Robota, 16px, 400);
   color: $grey-color;
 }
+
+@media (min-width: 390px) and (max-width: 391px) {
+  .navigation {
+    background: $light-green-color;
+    @include flex(flex, column, center, center);
+    flex-wrap: wrap;
+    padding: 2%;
+
+    &__contact {
+      @include flex(flex, column, space-between, space-between);
+      @include font_settings($font-family-Robota, 0.8rem, 400);
+      color: $grey-color;
+      padding-top: 4%;
+      padding-bottom: 4%;
+      gap: 5vw;
+    }
+  }
+  .nav-list {
+    @include flex(flex, row, space-between, center);
+
+    @include font_settings($font-family-Robota, 0.8rem, 400);
+    color: $grey-color;
+  }
+
+}
+
 
 .banner {
   @include flex(flex, row, space-around, center);
@@ -156,6 +200,33 @@ $font-family-Robota: 'Roboto';
     background: no-repeat;
   }
 }
+
+@media (min-width: 390px) and (max-width: 391px) {
+  .banner {
+    @include flex(flex, column, space-around, center);
+  }
+  .info {
+    gap: 5vw;
+
+    &__header {
+      padding: 1%;
+      @include font_settings($font-family-Robota, 2.5rem, 500);
+    }
+
+      &__header2 {
+        padding: 2%;
+        @include font_settings($font-family-Robota, 2.5rem, 700);
+
+      }
+
+      &__text {
+        padding: 4%;
+        @include font_settings($font-family-Robota, 0.8rem, 400);
+      }
+    }
+  }
+
+
 
 .steps {
   @include flex(flex, column, space-around, center);
