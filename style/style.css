@@ -203,26 +203,29 @@ html {
     justify-content: space-around;
     align-items: center;
   }
-  .info {
-    gap: 5vw;
+  .banner__icon {
+    max-width: 90vw;
   }
   .info__header {
     padding: 1%;
     font-family: "Roboto";
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 500;
   }
   .info__header2 {
     padding: 2%;
     font-family: "Roboto";
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 700;
   }
   .info__text {
     padding: 4%;
     font-family: "Roboto";
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 400;
+  }
+  .button__basic {
+    padding: 2.5vw 5.1vw;
   }
 }
 .steps {
@@ -307,6 +310,59 @@ html {
   border-bottom: solid 5px rgb(56, 206, 168);
 }
 
+@media (min-width: 390px) and (max-width: 391px) {
+  .steps__header {
+    font-family: "Roboto";
+    font-size: 2.3rem;
+    font-weight: 500;
+  }
+  .steps__header1 {
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-items: flex-start;
+  }
+  .item__header {
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: normal;
+  }
+  .texts__header {
+    font-family: "Roboto";
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .texts__header--isLighter {
+    font-family: "Roboto";
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .texts__header2, .texts__info {
+    font-family: "Roboto";
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
 .recipes {
   background: no-repeat url("../icons/fruitsBG.png");
   background-size: cover;
@@ -316,6 +372,11 @@ html {
   max-width: 352px;
 }
 
+@media (min-width: 390px) and (max-width: 391px) {
+  .recipes__table > img {
+    max-width: 25vw;
+  }
+}
 .story-of-success {
   display: flex;
   flex-direction: row;
@@ -357,6 +418,39 @@ html {
   font-weight: 400;
 }
 
+@media (min-width: 390px) and (max-width: 391px) {
+  .story-of-success {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .story-of-success > img {
+    max-width: 80vw;
+  }
+  .text-story {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: normal;
+    margin: 3%;
+  }
+  .text-story__header {
+    font-family: "Roboto";
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  .text-story__info {
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .text-story__text {
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
 .reviews {
   display: flex;
   flex-direction: column;
@@ -468,6 +562,39 @@ html {
   padding: 0 2%;
 }
 
+@media (min-width: 390px) and (max-width: 391px) {
+  .rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .rows--isMoved {
+    padding-left: 0%;
+  }
+  .item-rev > img {
+    width: 17vw;
+    padding-left: 2%;
+  }
+  .arrows {
+    display: none;
+  }
+  .info-rev {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 2vw;
+  }
+  .info-rev__text {
+    width: 60vw;
+  }
+  .item-rev__text {
+    font-family: "Roboto";
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
 .program {
   background-color: rgb(56, 206, 168);
   display: flex;
@@ -521,6 +648,41 @@ html {
   padding: 2%;
 }
 
+@media (min-width: 390px) and (max-width: 391px) {
+  .program {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .program__header {
+    font-family: "Roboto";
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  .program__sub-header {
+    font-family: "Roboto";
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  .health-plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .health-plan__header {
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 3%;
+  }
+  .health-plan__info {
+    font-family: "Roboto";
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
 .price-table {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -672,6 +834,39 @@ html {
   text-align: center;
 }
 
+@media (min-width: 390px) and (max-width: 391px) {
+  .headers__elem {
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .money__pr {
+    font-family: "Roboto";
+    font-size: 2.4rem;
+    font-weight: 300;
+  }
+  .body__tx {
+    font-family: "Roboto";
+    font-size: 0.6rem;
+    font-weight: 400;
+  }
+  .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .head__el1 {
+    font-family: "Roboto";
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .head__el2 {
+    font-family: "Roboto";
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+}
 .recommendations {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -708,6 +903,14 @@ html {
   color: rgb(32, 65, 77);
 }
 
+@media (min-width: 390px) and (max-width: 391px) {
+  .recommendations {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(1, auto);
+    padding: 5%;
+  }
+}
 .subscription {
   background: no-repeat url("../icons/fruits.png");
   background-size: cover;
@@ -763,6 +966,25 @@ html {
   justify-items: center;
 }
 
+@media (min-width: 390px) and (max-width: 391px) {
+  .container {
+    gap: 2vw;
+    top: 10%;
+    left: 1%;
+    width: 98vw;
+  }
+  .subscription {
+    min-height: 36vh;
+  }
+  .reviews__main-header {
+    font-size: 1.8rem;
+  }
+  .reviews__sub-header {
+    font-size: 1.2rem;
+    padding-top: 6%;
+    padding-bottom: 6%;
+  }
+}
 .journey-start {
   margin-top: 3%;
   margin-bottom: 3%;
@@ -781,6 +1003,14 @@ html {
   color: rgb(255, 255, 255);
 }
 
+@media (min-width: 390px) and (max-width: 391px) {
+  .journey-start__text {
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+  }
+}
 .footer {
   display: flex;
   flex-direction: row;
@@ -834,6 +1064,42 @@ html {
   font-size: 16px;
   font-weight: 400;
   color: rgb(33, 45, 50);
+}
+
+@media (min-width: 390px) and (max-width: 391px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+  }
+  .infos__text {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+@media (min-width: 390px) and (max-width: 391px) {
+  .links {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(6, auto);
+    row-gap: 4vw;
+    column-gap: 5vw;
+    padding-bottom: 60vw;
+    padding-top: 10vw;
+  }
+  .links > li > a {
+    font-family: "Roboto";
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
